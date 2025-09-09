@@ -1,4 +1,6 @@
-/* 1.1) The large amount of data in the table slows down our query. At the same time, keeping all this
+/* 
+1
+1.1) The large amount of data in the table slows down our query. At the same time, keeping all this
 big data in a single table is one of the reasons why the query performs poorly.
 1.2) My first suggestion is to implement an archiving system. The current year's data can be kept
 in the main table, while the data from previous years can be archived and accessed only when
@@ -41,8 +43,10 @@ WHERE AdSoyad LIKE ‘ahmet%’
 
 /*2.3. We can convert the user input to lowercase (toLowerCase()) or uppercase (toUpperCase())
 before sending it to SQL to ensure consistent searches. */
-
-/*3.1 I'm extracting only the year from the SatisTarihi column in the Satis table and displaying it in a
+ 
+/*
+3
+3.1 I'm extracting only the year from the SatisTarihi column in the Satis table and displaying it in a
 column called Yil.I'm selecting the UrunAdi column from the Urun table.I'm summing the values
 from the Adet column in the Satis table and showing the result in a column named ToplamAdet.
  By multiplying Satis.Adet with Urun.Fiyat, I calculate the total sales amount and display it in a column
