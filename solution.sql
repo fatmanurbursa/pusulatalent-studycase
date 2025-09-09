@@ -26,7 +26,10 @@ SELECT AdSoyad, KayitTarihi FROM HastaKayit
 WHERE AdSoyad LIKE ‘ahmet%’
  AND KayitTarihi >= ‘2024-01-01’
  AND KayitTarihi < ‘2025-01-01’;
-Or, you can add indexes and do something like:
+
+
+--Or, you can add indexes and do something like:
+
 CREATE INDEX idx_AdSoyad ON HastaKayit(AdSoyad);
 CREATE INDEX idx_KayitTarihi ON HastaKayit(KayitTarihi);
 SELECT AdSoyad, KayitTarihi
